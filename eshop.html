@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResellZone - Eshop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background: 
+                linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://i.pinimg.com/736x/e1/ff/90/e1ff901a7f327ef57156641debe8ca74.jpg') no-repeat center center;
+            background-size: cover;
+            color: #ffffff;
+        }
+        
+        .container {
+            width: 95%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        .items-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .item-card {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            border: 1px solid #333;
+            cursor: pointer;
+        }
+        
+        .item-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        
+        .item-image {
+            height: 220px;
+            background-color: #2a2a2a;
+            background-size: cover;
+            background-position: center;
+            border-bottom: 1px solid #333;
+        }
+        
+        .item-info {
+            padding: 20px;
+        }
+        
+        .item-title {
+            font-size: 1.3rem;
+            margin: 0 0 12px 0;
+            color: #ffffff;
+            font-weight: 600;
+        }
+        
+        .item-price {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 1.4rem;
+            margin: 15px 0;
+        }
+        
+        .item-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            margin: 8px 0;
+            display: block;
+        }
+
+        @media (max-width: 1024px) {
+            .items-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .items-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PRODUCTS</h1>
+        <div class="items-grid">
+            <!-- Yeezy Slides -->
+            <a href="yeezy-slides.html" class="item-card">
+                <div class="item-image" style="background-image: url('https://the-vault-au.com/cdn/shop/products/275981669_175448661483301_2346970599856579770_n_1080x.jpg?v=1652842590');"></div>
+                <div class="item-info">
+                    <h3 class="item-title">Yeezy Slides</h3>
+                    <span class="item-description">Condition: New</span>
+                    <span class="item-description">Size: EU 43</span>
+                    <span class="item-description">Items: 2x</span>
+                    <p class="item-price">60€</p>
+                </div>
+            </a>
+            
+            <!-- LV Wallet Black -->
+            <a href="lv-wallet-black.html" class="item-card">
+                <div class="item-image" style="background-image: url('https://www.cruizeer.com/cdn/shop/files/louis_vuitton_slender_wallet.jpg?v=1725889455&width=1946');"></div>
+                <div class="item-info">
+                    <h3 class="item-title">Louis Vuitton Wallet</h3>
+                    <span class="item-description">Condition: New</span>
+                    <span class="item-description">Color: Black</span>
+                    <span class="item-description">Items: 1x</span>
+                    <p class="item-price">30€</p>
+                </div>
+            </a>
+            
+            <!-- LV Wallet Brown -->
+            <a href="lv-wallet-brown.html" class="item-card">
+                <div class="item-image" style="background-image: url('https://image.goxip.com/mpcS96faWbGd6llGzimX2Wsl5wg=/fit-in/500x500/filters:format(jpg):quality(80):fill(white)/https:%2F%2Fimages.stockx.com%2Fimages%2FLouis-Vuitton-Marco-Wallet-Monogram-Brown.jpg');"></div>
+                <div class="item-info">
+                    <h3 class="item-title">Louis Vuitton Wallet</h3>
+                    <span class="item-description">Condition: New</span>
+                    <span class="item-description">Color: Brown</span>
+                    <span class="item-description">Items: 1x</span>
+                    <p class="item-price">30€</p>
+                </div>
+            </a>
+            
+            <!-- Diesel Belt -->
+            <a href="diesel-belt.html" class="item-card">
+                <div class="item-image" style="background-image: url('https://preview.redd.it/has-anyone-tried-this-diesel-leather-belt-with-a-suit-v0-nxdmtzv9l9xd1.png?width=1300&format=png&auto=webp&s=340cc8a4aaccf458e84306e1a813bff773dd55ac'); background-color: #fff;"></div>
+                <div class="item-info">
+                    <h3 class="item-title">Diesel Belt</h3>
+                    <span class="item-description">Condition: New</span>
+                    <span class="item-description">Length: 105cm</span>
+                    <span class="item-description">Items: 9x</span>
+                    <p class="item-price">20€</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
